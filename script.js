@@ -55,13 +55,18 @@ function playRound() {
     console.log('computer Chose ' + computerSelection)
     console.log('Human Chose '+ humanSelection )
     let result = rpslogic(humanSelection,computerSelection);
-    if(result === 0) alert(" Draw ");
+    if(result === 0) {
+        alert(" Draw ");
+        console.log("Draw");
+    }
     if(result === 1 ) {
         alert("round for Humans");
+        console.log("round for Humans");
         humanScore ++;
     }
     if(result === 2 ) {
         alert("round for Machines");
+        console.log("round for Humans")
         compscore++;
     }   
 
